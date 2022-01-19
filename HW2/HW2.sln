@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RSA", "RSA\RSA.csproj", "{970EDA9D-09E5-415C-9B07-8B81803A4C3C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Diffie-Hellmann", "Diffie-Hellmann\Diffie-Hellmann.csproj", "{C82AE931-F438-46AD-90E3-BEBD6687C344}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{970EDA9D-09E5-415C-9B07-8B81803A4C3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{970EDA9D-09E5-415C-9B07-8B81803A4C3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{970EDA9D-09E5-415C-9B07-8B81803A4C3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{970EDA9D-09E5-415C-9B07-8B81803A4C3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C82AE931-F438-46AD-90E3-BEBD6687C344}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C82AE931-F438-46AD-90E3-BEBD6687C344}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C82AE931-F438-46AD-90E3-BEBD6687C344}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C82AE931-F438-46AD-90E3-BEBD6687C344}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

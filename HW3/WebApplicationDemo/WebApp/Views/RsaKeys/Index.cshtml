@@ -1,0 +1,68 @@
+@model IEnumerable<Domain.RsaKey>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Encrypt</a>
+</p>
+<p>
+    <a asp-action="Decrypt">Decrypt</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Message)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cypher)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RsaCypher)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.KeyLength)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.KeySecret)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UserId)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td class="text-break">
+                @Html.DisplayFor(modelItem => item.Message)
+            </td>
+            <td class="text-break">
+                @Html.DisplayFor(modelItem => item.Cypher)
+            </td>
+            <td class="text-break">
+                @Html.DisplayFor(modelItem => item.RsaCypher)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.KeyLength)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.KeySecret)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UserId)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

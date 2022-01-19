@@ -1,0 +1,48 @@
+@model Domain.ExchangeKey
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>ExchangeKey</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.P)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.P)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.G)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.G)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ASecret)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ASecret)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.BSecret)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.BSecret)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CommonSecret)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CommonSecret)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

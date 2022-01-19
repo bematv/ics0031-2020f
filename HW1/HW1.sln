@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shift_Ciphers_Unbreakable", "Shift_Ciphers_Unbreakable\Shift_Ciphers_Unbreakable.csproj", "{57DC8ABF-E3DB-4AD1-AA43-5173EF9FDF2B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shift_Ciphers", "Shift_Ciphers\Shift_Ciphers.csproj", "{121D9203-36B5-4F8F-BE3F-434D98483EE6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{57DC8ABF-E3DB-4AD1-AA43-5173EF9FDF2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57DC8ABF-E3DB-4AD1-AA43-5173EF9FDF2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57DC8ABF-E3DB-4AD1-AA43-5173EF9FDF2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57DC8ABF-E3DB-4AD1-AA43-5173EF9FDF2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{121D9203-36B5-4F8F-BE3F-434D98483EE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{121D9203-36B5-4F8F-BE3F-434D98483EE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{121D9203-36B5-4F8F-BE3F-434D98483EE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{121D9203-36B5-4F8F-BE3F-434D98483EE6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

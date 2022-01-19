@@ -1,0 +1,6 @@
+# ics0031-2020f
+
+## ICS0022
+## ICS0027
+Benedek Matveev
+201840IVSB

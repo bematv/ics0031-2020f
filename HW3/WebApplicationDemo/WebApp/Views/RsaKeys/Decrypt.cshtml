@@ -1,0 +1,48 @@
+@model Domain.RsaKey
+
+@{
+    ViewData["Title"] = "Decrypt";
+}
+
+<h1>Decrypt</h1>
+
+<h4>RsaKey</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Decrypt">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Cypher" class="control-label"></label>
+                <input asp-for="Cypher" class="form-control" />
+                <span asp-validation-for="Cypher" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="RsaCypher" class="control-label"></label>
+                <input asp-for="RsaCypher" class="form-control" />
+                <span asp-validation-for="RsaCypher" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="KeyLength" class="control-label"></label>
+                <input asp-for="KeyLength" class="form-control" />
+                <span asp-validation-for="KeyLength" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="KeySecret" class="control-label"></label>
+                <input asp-for="KeySecret" class="form-control" />
+                <span asp-validation-for="KeySecret" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Decrypt" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
